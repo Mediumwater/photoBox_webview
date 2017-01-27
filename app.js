@@ -11,6 +11,9 @@ var app = express();
 
 HandlebarsIntl.registerWith(Handlebars);
 
+// Set static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'handlebars');
 app.engine('handlebars', exphbs({defaultLayout:'layout'}));
@@ -28,9 +31,6 @@ app.engine('handlebars', exphbs({defaultLayout:'layout'}));
 // BodyParser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false }));
-
-// Set static Folder
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 
