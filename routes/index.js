@@ -6,7 +6,7 @@ var fs = require('fs');
 router.get('/', function(req, res){
 	var path="./public/img/photoBox/";
 	fs.readdir(path, function(err, items) {
-	    res.render('index', {pictures: items});
+	    res.render('index', {pictures: items.reverse()});
 	});
 })
 
