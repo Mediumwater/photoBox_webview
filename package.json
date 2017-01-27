@@ -9,14 +9,12 @@
   "author": "T.S.",
   "license": "ISC",
   "dependencies": {
-  	"handlebars-intl": "^1.1.2",
-  	"express-handlebars": "*",
+    "body-parser": "*",
+    "express": "*",
+    "express-handlebars": "*",
     "express-messages": "*",
     "express-session": "*",
-  	"body-parser": "*",
-  	"express": "*",
-  	"express-handlebars": "*",
-    "express-messages": "*",
-    "express-session": "*"
+    "handlebars-intl": "^1.1.2",
+    "lightbox2": "^2.9.0"
   }
 }
