@@ -1,0 +1,22 @@
+{
+  "name": "photoboxwebview",
+  "version": "1.0.0",
+  "description": "This is the webview which shows the taken photos",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "T.S.",
+  "license": "ISC",
+  "dependencies": {
+  	"handlebars-intl": "^1.1.2",
+  	"express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+  	"body-parser": "*",
+  	"express": "*",
+  	"express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*"
+  }
+}

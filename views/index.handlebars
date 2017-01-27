@@ -1,0 +1,46 @@
+<!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">PhotoBox </h1>
+            </div>
+        </div>
+
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            
+              {{#each pictures}}
+           
+                {{#ifFourth @index}}
+                    <div class="col-md-3 portfolio-item">
+                        <a href="#">
+                        <img class="img-responsive" src="/img/{{this}}" alt="" width="500" height="500">
+                        </a>
+                    </div>
+                    </div>
+                    <div class="row">
+                {{else}}
+                    <div class="col-md-3 portfolio-item">
+                        <a href="#">
+                        <img class="img-responsive" src="/img/{{this}}" alt="" width="500" height="500">
+                        </a>
+                    </div>
+                {{/ifFourth}}
+            
+              {{/each}}
+           
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Meine Mutti 1988</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
